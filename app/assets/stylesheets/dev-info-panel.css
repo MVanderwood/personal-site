@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+#dev-info-panel {
+    position: fixed;
+    bottom  : 0;
+    right   : 0;
+    width   : 290px;
+    padding : 10px;
+    
+    font-family     : 'Roboto Mono', monospace;
+    background-color: black;
+    border          : 5px solid darkolivegreen;
+    color           : greenyellow;
+}
