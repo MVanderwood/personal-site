@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-#dev-info-panel {
+.dev-info-panel {
     position: fixed;
     bottom  : 0;
     right   : 0;
@@ -10,5 +10,41 @@
     font-family     : 'Roboto Mono', monospace;
     background-color: black;
     border          : 5px solid darkolivegreen;
+    border-top      : 25px solid darkolivegreen;
     color           : greenyellow;
+    transition      : 0.25s linear all;
+}
+
+#minimize-toggle div {
+    border     : 0;
+    padding    : 10;
+    line-height: 0;
+    cursor     : pointer;
+}
+
+.line {
+    width           : 18px;
+    height          : 4px;
+    background-color: white;
+    transition      : 0.25s linear all;
+}
+
+.line1 {
+    transform : translate(0px, -24px) rotate(40deg);
+}
+
+.line2 {
+    transform : translate(11px, -28px) rotate(-40deg);
+}
+
+.line1.minimized {
+    transform: translate(0px, -24px) rotate(320deg);
+}
+
+.line2.minimized {
+    transform: translate(11px, -28px) rotate(-320deg);
+}
+
+.dev-info-panel.minimized {
+    transform: translate(0px, 97px)
 }

@@ -23,4 +23,13 @@
         }
     };
     window.onload = window.onresize;
-})()
+
+    let minimizeToggle = document.querySelector('#minimize-toggle');
+    minimizeToggle.addEventListener('click', () => {
+        let elementsToMinimize = document.querySelectorAll('.dev-info-panel, .line1, .line2');
+
+        elementsToMinimize.forEach((element) => {
+            element.classList.toggle('minimized');
+        });
+    });
+})();
