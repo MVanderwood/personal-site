@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+ * {
+     margin    : 0px;
+     padding   : 0px;
+     box-sizing: border-box;
+ }
+
+.navbar {
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+    min-height      : 10vh;
+    background-color: #5d4954;
+    font-family     : "Poppins", sans-serif;
+}
+
+.navbar-logo {
+    color         : rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size     : 20px;
+}
+
+.navbar-links {
+    display        : flex;
+    justify-content: space-around;
+    width          : 30%;
+}
+
+.navbar-links a {
+    color          : rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing : 3px;
+    font-weight    : bold;
+    font-size      : 14px;
+}
+
+.navbar-links li {
+    list-style: none;
+}
