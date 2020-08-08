@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>PersonalSite</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,8 +13,8 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="navbar-logo">
+    <nav id="navbar">
+      <div id="navbar-logo">
         <h4>Logo</h4>
       </div>
         <ul class="navbar-links">
@@ -20,8 +23,29 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact Me</a></li>
         </ul>
+        <div class="burger">
+          <div id="line1"></div>
+          <div id="line2"></div>
+          <div id="line3"></div>
+        </div>
     </nav>
 
     <%= yield %>
+
+    <% if Rails.env == "development" %>
+      <div class="dev-info-panel minimized">
+        <div id="minimize-toggle">
+          <div class="line line1 minimized"></div>
+          <div class="line line2 minimized"></div>
+        </div>
+        <p>View Width : <span id="view-width-value"></span>px</p>
+        <p>View Height: <span id="view-height-value"></span>px</p>
+        <p>Screen Type: <span id="screen-type-value"></span></p>
+      </div>
+
+      <%= javascript_pack_tag 'dev-info-panel' %>
+    <% end %>
+
+    <%= javascript_pack_tag 'navbar' %>
   </body>
 </html>
