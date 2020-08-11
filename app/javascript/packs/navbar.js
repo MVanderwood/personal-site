@@ -16,5 +16,21 @@
             }
         });
         navLinksVisible = !navLinksVisible
+
+        // Burger Animation
+        burger.classList.toggle('toggle')
+    });
+
+    document.querySelector('#about-link').addEventListener('click', () => {
+        document.querySelector('#about-link a').click();
+    });
+    document.querySelector('#portfolio-link').addEventListener('click', () => {
+        document.querySelector('#portfolio-link a').click();
+    });
+    document.querySelector('#blog-link').addEventListener('click', () => {
+        document.querySelector('#blog-link a').click();
+    });
+    document.querySelector('#contact-link').addEventListener('click', () => {
+        document.querySelector('#contact-link a').click();
     });
 })()

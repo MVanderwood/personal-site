@@ -7,12 +7,16 @@
         let screenType = document.querySelector('#screen-type-value');
         let currentType = screenType.textContent;
     
-        if(width > 1007) {
-            screenType.textContent = "Large Monitor";
-        } else if(width > 641) {
-            screenType.textContent = "Medium Monitor";
+        if(width > 1560) {
+            screenType.textContent = "Huge Display";
+        } else if(width > 1235) {
+            screenType.textContent = "Large Display";
+        } else if(width > 778) {
+            screenType.textContent = "Medium Display";
+        } else if(width > 480) {
+            screenType.textContent = "Small Display";
         } else {
-            screenType.textContent = "Small Monitor";
+            screenType.textContent = "Tiny Display";
         }
     
         if (currentType != screenType.textContent) {
