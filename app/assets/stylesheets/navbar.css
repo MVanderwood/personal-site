@@ -111,14 +111,14 @@
 
 }
 
-.burger #line1.toggled {
+.burger.toggled #line1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-.burger #line2.toggled {
+.burger.toggled #line2 {
     opacity: 0;
 }
 
-.burger #line3.toggled {
+.burger.toggled #line3 {
     transform: rotate(45deg) translate(-5px, -5px);
 }

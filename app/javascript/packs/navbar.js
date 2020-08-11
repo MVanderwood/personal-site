@@ -18,7 +18,7 @@
         navLinksVisible = !navLinksVisible
 
         // Burger Animation
-        burger.classList.toggle('toggle')
+        burger.classList.toggle('toggled')
     });
 
     document.querySelector('#about-link').addEventListener('click', () => {
