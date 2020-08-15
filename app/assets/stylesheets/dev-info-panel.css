@@ -48,3 +48,41 @@
 .dev-info-panel.minimized {
     transform: translate(0px, 97px)
 }
+
+#error-indicator {
+    position: absolute;
+    right: 0%;
+    transform: translate(-50px, -41px);
+}
+
+#error-indicator.hidden {
+    visibility: hidden;
+}
+
+.circle {
+    height          : 18px;
+    width           : 18px;
+    border-radius   : 50%;
+    background-color: red;
+    border          : 0.2px solid white;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+#error-indicator .line {
+    height  : 2px;
+    width   : 11px;
+    position: absolute;
+    left    : 20%;
+    top     : 45%;
+}
+
+#error-indicator .line1 {
+    transform: rotate(45deg);
+}
+
+#error-indicator .line2 {
+    transform: rotate(-45deg);
+}
