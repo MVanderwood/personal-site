@@ -52,6 +52,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  local_ip = ENV["LOCAL_IP_RANGE"].split(".")
-  config.hosts << /^#{local_ip[0]}\.#{local_ip[1]}\.#{local_ip[2]}\.(#{local_ip[3].split("|")[0]}?\d|#{local_ip[3].split("|")[1]})\.xip\.io$/
+  config.hosts << "#{`ipconfig getifaddr en0`}.xip.io".gsub("\n", "")
 end
