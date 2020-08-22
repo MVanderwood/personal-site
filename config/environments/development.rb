@@ -52,5 +52,12 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.hosts << "#{`ipconfig getifaddr en0`}.xip.io".gsub("\n", "")
+  if defined?(Rails::Server)
+    local_ip = `ipconfig getifaddr en0`.gsub("\n", "")
+    config.hosts << "#{local_ip}.xip.io"
+
+    config.after_initialize do
+      `open http://#{local_ip}.xip.io:#{ENV.fetch("PORT") { 3000 }}`
+    end
+  end
 end
