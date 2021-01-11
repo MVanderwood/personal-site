@@ -2,44 +2,60 @@
     display         : flex;
     justify-content : space-around;
     align-items     : center;
-    height          : 60px;
-    background-color: #5d4954;
-    font-family     : "Poppins", sans-serif;
+    height          : 132px;
+    background-color: white;
+    border-bottom   : 3px solid black; 
 }
 
 #navbar-logo {
-    color         : rgb(226, 226, 226);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size     : 25px;
+    height: 100px;
 
     position    : absolute;
     left        : 0%;
     padding-left: 45px;
+    transform: translateY(-1px); 
 }
 
-.navbar-links {
+#navbar-logo:hover {
+    cursor: crosshair;
+}
+
+.navbar-links-1 {
     display        : flex;
     justify-content: space-around;
     width          : 0%;
 
     position : absolute;
     right    : 0%;
-    transform: translateX(-300px);
+    top      : 0%;
+    transform: translate(-150px, 0px);
+}
+
+.navbar-links-2 {
+    display        : flex;
+    justify-content: space-around;
+    width          : 0%;
+
+    position : absolute;
+    top      : 65px;
+    right    : 0%;
+    transform: translate(-150px, 0px);
 }
 
 .navbar-links a {
-    color          : rgb(226, 226, 226);
+    font-family    : "Poppins", sans-serif;
+    color          : darkgrey;
     text-decoration: none;
     letter-spacing : 3px;
     font-weight    : bold;
-    font-size      : 14px;
+    font-size      : 18px;
+    transition     : all 0.8s ease;
 }
 
 .navbar-links li {
     list-style  : none;
-    min-width   : 140px;
-    padding     : 15px;
+    min-width   : 170px;
+    padding     : 21.75px;
     transition  : all 0.8s ease;
     text-align  : center;
     border-color: #5d4954;
@@ -51,7 +67,11 @@
 
 .navbar-links li:hover {
     cursor          : pointer;
-    background-color: #6f5764;
+    background-color: darkgrey;
+}
+
+.navbar-links li:hover a {
+    color: white;
 }
 
 .burger {

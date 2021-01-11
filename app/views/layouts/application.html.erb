@@ -10,24 +10,28 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" href="<%= asset_path("favicon.ico") %>">
   </head>
 
   <body>
     <nav id="navbar">
       <div id="navbar-logo">
-        <h4>Logo</h4>
+        <%= image_tag asset_path("header/v-logo.png"), id: "navbar-logo" %>
       </div>
-        <ul class="navbar-links">
+        <ul class="navbar-links navbar-links-1">
           <li id="about-link"><a href="#">About</a></li>
           <li id="portfolio-link"><a href="#">Portfolio</a></li>
-          <li id="blog-link"><a href="#">Blog</a></li>
-          <li id="contact-link"><a href="#">Contact Me</a></li>
         </ul>
+        <ul class="navbar-links navbar-links-2">
+          <li id="blog-link"><a href="#">Blog</a></li>
+          <li id="contact-link"><a href="#">Contact</a></li>
+        </ul>   
         <div class="burger">
           <div id="line1"></div>
           <div id="line2"></div>
           <div id="line3"></div>
         </div>
+      </div>
     </nav>
 
     <%= yield %>
