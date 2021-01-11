@@ -2,7 +2,7 @@
     display         : flex;
     justify-content : space-around;
     align-items     : center;
-    height          : 132px;
+    height          : 133px;
     background-color: white;
     border-bottom   : 3px solid black; 
 }
@@ -55,7 +55,7 @@
 .navbar-links li {
     list-style  : none;
     min-width   : 170px;
-    padding     : 21.75px;
+    padding     : 22px;
     transition  : all 0.8s ease;
     text-align  : center;
     border-color: #5d4954;
