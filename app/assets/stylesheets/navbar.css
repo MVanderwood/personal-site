@@ -13,11 +13,15 @@
     position    : absolute;
     left        : 0%;
     padding-left: 45px;
-    transform: translateY(-1px); 
+    transform   : translateY(-1px);
 }
 
-#navbar-logo:hover {
-    cursor: crosshair;
+.navbar-logo-text {
+    font-family: "Ruslan Display";
+    font-size  : 40px;
+    position   : absolute;
+    top        : 85px;
+    left       : 145px;
 }
 
 .navbar-links-1 {
@@ -89,6 +93,10 @@
 @media screen and (max-width: 778px) { /* Small */
     body {
         overflow-x: hidden;
+    }
+
+    .navbar-logo-text #long-text {
+        display: none;
     }
 
     .navbar-links {
