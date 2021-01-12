@@ -14,10 +14,17 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {
+	font-family: "Ruslan Display";
+	src        : url(font-path("Ruslandisplay-OwBO.ttf")) format("truetype");
+}
 
- * {
-     margin    : 0px;
-     padding   : 0px;
-     box-sizing: border-box;
- }
+* {
+    margin    : 0px;
+    padding   : 0px;
+    box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
