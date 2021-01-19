@@ -2,6 +2,7 @@
     const burger   = document.querySelector('.burger');
     const navbar   = document.querySelector('.navbar-links');
     const navLinks = document.querySelectorAll('.navbar-links li');
+    // const burger
 
     let navLinksVisible = false
 
