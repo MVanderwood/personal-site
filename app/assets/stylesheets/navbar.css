@@ -17,10 +17,11 @@
 }
 
 .navbar-logo-text {
-    font-family: "Ruslan Display";
+    font-family: "Lexend Mega Regular", sans-serif;
+    font-weight: bold;
     font-size  : 40px;
     position   : absolute;
-    top        : 85px;
+    top        : 70px;
     left       : 145px;
 }
 

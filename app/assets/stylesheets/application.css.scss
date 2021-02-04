@@ -14,9 +14,19 @@
  *= require_self
  */
 
-@font-face {
-	font-family: "Ruslan Display";
-	src        : url(font-path("Ruslandisplay-OwBO.ttf")) format("truetype");
+@font-face { /* header */
+    font-family: "Lexend Mega Regular";
+    src        : url(font-path("LexendMega-Regular.ttf")) format("truetype");
+}
+
+@font-face { /* website body */
+    font-family: "NotoSansJP Light";
+    src        : font-url(font-path("NotoSansJP-Light.otf")) format("opentype");
+}
+
+@font-face { /* code blocks */
+    font-family: "Share Tech Mono";
+    src        : url(font-path("ShareTechMono-Regular.ttf")) format("truetype");
 }
 
 * {
@@ -26,5 +36,5 @@
 }
 
 body {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
