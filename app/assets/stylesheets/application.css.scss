@@ -20,6 +20,11 @@
 }
 
 @font-face { /* website body */
+    font-family: "NotoSansJP Medium";
+    src        : font-url(font-path("NotoSansJP-Medium.otf")) format("opentype");
+}
+
+@font-face { /* website body */
     font-family: "NotoSansJP Light";
     src        : font-url(font-path("NotoSansJP-Light.otf")) format("opentype");
 }

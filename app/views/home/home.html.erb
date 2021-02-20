@@ -1,37 +1,54 @@
 <div id="home-container">
     <div id="name-header">
-        <h1>Michael Vanderwood - iOS Developer</h1>
+        <h1>Mike Vanderwood</h1>
+    </div>
+    <p class="intro-text-0">Software developer</p>
+    <p class="intro-text-1">Full-stack engineer focussing on iOS development. For business and personal inqueries, contact me at <a href="mailto:mike@vanderwood.co">mike@vanderwood.co</a></p>
+    <h2 class="carousel-header">Skills</h2>
+    <div class="skill-carousel">
+        <div class="slide" id="slide-1">
+            <h3 class="slide-header">Mobile</h3>
+            <ul class="skill-item-line" id="-skill-section">
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/ios.png"), class: 'skill-logo' %> iOS</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/swift.png"), class: 'skill-logo' %> Swift</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/uikit.png"), class: 'skill-logo' %> UIKit</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/objective-c.png"), class: 'skill-logo' %> Objective-C</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/mapkit.png"), class: 'skill-logo' %> MapKit</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/xctest.png"), class: 'skill-logo' %> XCTest</li>
+            </ul>
+        </div>
+        <div class="slide" id="slide-2">
+            <h3 class="slide-header">Server</h3>
+            <ul class="skill-item-line" id="-skill-section">
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/rails.png"), class: 'skill-logo' %> Rails</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/ruby.png"), class: 'skill-logo' %> Ruby</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/postgres.png"), class: 'skill-logo' %> Postgres</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/aws.png"), class: 'skill-logo' %> AWS</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/rspec.png"), class: 'skill-logo' %> RSpec</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/sidekiq.png"), class: 'skill-logo' %> Sidekiq</li>
+            </ul>
+        </div>
+        <div class="slide" id="slide-3">
+            <h3 class="slide-header">Workflow</h3>
+            <ul class="skill-item-line" id="-skill-section">
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/heroku.png"), class: 'skill-logo' %> Heroku</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/agile.png"), class: 'skill-logo' %> AGILE</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/git.png"), class: 'skill-logo' %> Git</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/github.png"), class: 'skill-logo' %> Github</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/trello.png"), class: 'skill-logo' %> Trello</li>
+                <li class="skill-item"><%= image_tag asset_path("skill-logos/slack.png"), class: 'skill-logo' %> Slack</li>
+            </ul>
+        </div>
     </div>
 
-    <!-- <div id="skill-list">
-        <ul>
-            <li class="skill-item-line" id="-skill-section">Mobile -- 
-                <span class="skill-item">Swift <%= image_tag asset_path("skill-logos/swift.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">iOS <%= image_tag asset_path("skill-logos/ios.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">Objective-C <%= image_tag asset_path("skill-logos/objective-c.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">UIKit <%= image_tag asset_path("skill-logos/uikit.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">MapKit <%= image_tag asset_path("skill-logos/mapkit.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">XCTest <%= image_tag asset_path("skill-logos/xctest.png"), class: 'skill-logo' %></span>
-            </li>
-            <li class="skill-item-line" id="-skill-section">Server-side -- 
-                <span class="skill-item">Rails <%= image_tag asset_path("skill-logos/rails.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">Ruby <%= image_tag asset_path("skill-logos/ruby.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">Postgres <%= image_tag asset_path("skill-logos/postgres.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">RSpec <%= image_tag asset_path("skill-logos/rspec.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">Sidekiq <%= image_tag asset_path("skill-logos/sidekiq.png"), class: 'skill-logo' %></span>
-            </li>
-            <li class="skill-item-line" id="-skill-section">Web Development -- 
-                <span class="skill-item">Javascript <%= image_tag asset_path("skill-logos/javascript.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">HTTP <%= image_tag asset_path("skill-logos/http.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">HTML <%= image_tag asset_path("skill-logos/html.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">CSS 3 <%= image_tag asset_path("skill-logos/css3.png"), class: 'skill-logo' %></span>
-            </li>
-            <li class="skill-item-line" id="-skill-section">Workflow -- 
-                <span class="skill-item">AGILE <%= image_tag asset_path("skill-logos/agile.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">Git <%= image_tag asset_path("skill-logos/git.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">Github <%= image_tag asset_path("skill-logos/github.png"), class: 'skill-logo' %></span>
-                <span class="skill-item">Trello <%= image_tag asset_path("skill-logos/trello.png"), class: 'skill-logo' %></span>
-            </li>
-        </ul>
+    <!-- <a class="carousel-prev" onclick="decrementSlide()">&#10094;</a>
+    <a class="carousel-next" onclick="incrementSlide()">&#10095;</a>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+        <span class="dot" onclick="setSlide(4)"></span>
     </div> -->
+    <%= javascript_pack_tag 'home' %>
 </div>
