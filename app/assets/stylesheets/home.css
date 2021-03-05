@@ -33,7 +33,8 @@ body {
     padding-bottom: 50px;
 }
 
-.carousel-header {
+.skills-header {
+    font-size     : 23px;
     padding-bottom: 25px;
 }
 
@@ -44,6 +45,10 @@ body {
 
 .slide {
     /* display: none; */
+}
+
+.slide-header {
+    font-size: 28px;
 }
 
 .skill-item-line {
