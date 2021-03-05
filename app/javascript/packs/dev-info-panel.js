@@ -41,7 +41,6 @@
     // Error Indicator
     const errorIndicator = document.querySelector('#error-indicator');
     window.onerror = () => {
-        console.log("boooo")
         errorIndicator.classList.toggle('hidden');
     };
 })();

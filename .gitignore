@@ -12,6 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/dump.rdb
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
@@ -25,7 +26,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-*/.DS_Store
+.DS_Store
 .env
 
 /public/packs
